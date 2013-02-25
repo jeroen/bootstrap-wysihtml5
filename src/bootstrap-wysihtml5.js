@@ -4,9 +4,10 @@
     var tpl = {
         "font-styles": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
+            var icon_white = (options && options.icon_white) ? ' icon-white' : '';
             return "<li class='dropdown'>" +
               "<a class='btn dropdown-toggle" + size + "' data-toggle='dropdown' href='#'>" +
-              "<i class='icon-font'></i>&nbsp;<span class='current-font'>" + locale.font_styles.normal + "</span>&nbsp;<b class='caret'></b>" +
+              "<i class='icon-font" + icon_white + "'></i>&nbsp;<span class='current-font'>" + locale.font_styles.normal + "</span>&nbsp;<b class='caret'></b>" +
               "</a>" +
               "<ul class='dropdown-menu'>" +
                 "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='div' tabindex='-1'>" + locale.font_styles.normal + "</a></li>" +
