@@ -30,18 +30,20 @@
 
         "lists": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
+            var icon_white = (options && options.icon_white) ? ' icon-white' : '';
             return "<li>" +
               "<div class='btn-group'>" +
-                "<a class='btn" + size + "' data-wysihtml5-command='insertUnorderedList' title='" + locale.lists.unordered + "' tabindex='-1'><i class='icon-list'></i></a>" +
-                "<a class='btn" + size + "' data-wysihtml5-command='insertOrderedList' title='" + locale.lists.ordered + "' tabindex='-1'><i class='icon-th-list'></i></a>" +
-                "<a class='btn" + size + "' data-wysihtml5-command='Outdent' title='" + locale.lists.outdent + "' tabindex='-1'><i class='icon-indent-right'></i></a>" +
-                "<a class='btn" + size + "' data-wysihtml5-command='Indent' title='" + locale.lists.indent + "' tabindex='-1'><i class='icon-indent-left'></i></a>" +
+                "<a class='btn" + size + "' data-wysihtml5-command='insertUnorderedList' title='" + locale.lists.unordered + "' tabindex='-1'><i class='icon-list" + icon_white + "'></i></a>" +
+                "<a class='btn" + size + "' data-wysihtml5-command='insertOrderedList' title='" + locale.lists.ordered + "' tabindex='-1'><i class='icon-th-list" + icon_white + "'></i></a>" +
+                "<a class='btn" + size + "' data-wysihtml5-command='Outdent' title='" + locale.lists.outdent + "' tabindex='-1'><i class='icon-indent-right" + icon_white + "'></i></a>" +
+                "<a class='btn" + size + "' data-wysihtml5-command='Indent' title='" + locale.lists.indent + "' tabindex='-1'><i class='icon-indent-left" + icon_white + "'></i></a>" +
               "</div>" +
             "</li>";
         },
 
         "link": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
+            var icon_white = (options && options.icon_white) ? ' icon-white' : '';
             return "<li>" +
               "<div class='bootstrap-wysihtml5-insert-link-modal modal hide fade'>" +
                 "<div class='modal-header'>" +
@@ -56,12 +58,13 @@
                   "<a href='#' class='btn btn-primary' data-dismiss='modal'>" + locale.link.insert + "</a>" +
                 "</div>" +
               "</div>" +
-              "<a class='btn" + size + "' data-wysihtml5-command='createLink' title='" + locale.link.insert + "' tabindex='-1'><i class='icon-share'></i></a>" +
+              "<a class='btn" + size + "' data-wysihtml5-command='createLink' title='" + locale.link.insert + "' tabindex='-1'><i class='icon-share" + icon_white + "'></i></a>" +
             "</li>";
         },
 
         "image": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
+            var icon_white = (options && options.icon_white) ? ' icon-white' : '';
             return "<li>" +
               "<div class='bootstrap-wysihtml5-insert-image-modal modal hide fade'>" +
                 "<div class='modal-header'>" +
@@ -76,15 +79,16 @@
                   "<a href='#' class='btn btn-primary' data-dismiss='modal'>" + locale.image.insert + "</a>" +
                 "</div>" +
               "</div>" +
-              "<a class='btn" + size + "' data-wysihtml5-command='insertImage' title='" + locale.image.insert + "' tabindex='-1'><i class='icon-picture'></i></a>" +
+              "<a class='btn" + size + "' data-wysihtml5-command='insertImage' title='" + locale.image.insert + "' tabindex='-1'><i class='icon-picture" + icon_white + "'></i></a>" +
             "</li>";
         },
 
         "html": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
+            var icon_white = (options && options.icon_white) ? ' icon-white' : '';
             return "<li>" +
               "<div class='btn-group'>" +
-                "<a class='btn" + size + "' data-wysihtml5-action='change_view' title='" + locale.html.edit + "' tabindex='-1'><i class='icon-pencil'></i></a>" +
+                "<a class='btn" + size + "' data-wysihtml5-action='change_view' title='" + locale.html.edit + "' tabindex='-1'><i class='icon-pencil" + icon_white + "'></i></a>" +
               "</div>" +
             "</li>";
         },
